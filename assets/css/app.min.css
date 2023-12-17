@@ -1337,8 +1337,9 @@ body[data-layout="horizontal"][data-layout-size="boxed"] .navbar-header {
   bottom: 0;
   left: 0;
   top: 0;
-  opacity: 0.7;
-  background-color: #000;
+  opacity: 0.6;
+  background-color: #0C2E8A;
+ 
 }
 .alert-dismissible .btn-close {
   font-size: 10px;
