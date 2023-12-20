@@ -187,7 +187,7 @@ body[data-topbar="dark"] .app-search span {
   color: rgba(255, 255, 255, 0.5);
 }
 body[data-sidebar="dark"] .navbar-brand-box {
-  background: #0C2E8A;
+  background: #A44910;
 
 }
 body[data-sidebar="dark"] .logo-light {
@@ -233,6 +233,13 @@ body[data-layout="horizontal"] .page-content {
   background-color: #A44910; 
   border-color: #A44910; 
   color: #ffffff; 
+}
+
+.btn-noo-custom-primary{
+
+  background-color: white;
+  border: 1px solid #A44910;
+  color: #A44910;
 }
 .page-title-box .breadcrumb {
   background-color: transparent;
@@ -595,7 +602,7 @@ body[data-layout="horizontal"] .footer {
   color: #f8f9fa;
 }
 body[data-sidebar="dark"] .vertical-menu {
-  background: #0C2E8A;
+  background:white;
 }
 body[data-sidebar="dark"] #sidebar-menu ul li a {
   color: #8590a5;
@@ -610,10 +617,10 @@ body[data-sidebar="dark"] #sidebar-menu ul li a:hover i {
   color: #d7e4ec;
 }
 body[data-sidebar="dark"] #sidebar-menu ul li ul.sub-menu li a {
-  color: #8590a5;
+  color: black;
 }
 body[data-sidebar="dark"] #sidebar-menu ul li ul.sub-menu li a:hover {
-  color: #d7e4ec;
+  color: #0C2E8A;
 }
 body[data-sidebar="dark"].vertical-collpsed {
   min-height: 1400px;
@@ -1523,6 +1530,7 @@ body[data-layout="horizontal"][data-layout-size="boxed"] .navbar-header {
   body {
     padding: 0;
     margin: 0;
+    
   }
   .card {
     border: 0;
