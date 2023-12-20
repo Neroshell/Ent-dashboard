@@ -132,41 +132,46 @@
                         <!-- Left Menu Start -->
                         <ul class="metismenu list-unstyled" id="side-menu">
                             <li class="menu-title">Menu</li>
-
+                    
                             <li>
-                                <a href="admin-dashboard.html" class="waves-effect">
+                                <a href="developer-dash.html" class="waves-effect">
                                     <i class="mdi mdi-home-variant-outline" style="color: #A44910;"></i><span
                                         class="badge rounded-pill btn-custom-primary float-end">1</span>
                                     <span style="color: #0c2e8a; font-weight: bold;">Dashboard</span>
                                 </a>
                             </li>
-
-                          <!-- Super Admin Side Menu -->
-                          <li>
-                            <a href="javascript: void(0);" class="has-arrow waves-effect">
-                                <i class="mdi mdi-account-circle-outline" style="color: #A44910;"></i>
-                                <span style="color: #0c2e8a;">Developer</span>
-                            </a>
-                            <ul class="sub-menu" aria-expanded="false">
-                                <!-- Onboard and Edit Developers -->
-                                <li><a href="/auth-onboard-developer.html">Onboard Developers</a></li>
-                                <li><a href="/edit-developer.html">Edit Developers</a></li>
-                            </ul>
-                        </li>
-
-<!-- End Super Admin Side Menu -->
-
-
-                         
-                           
-                                </ul>
+                    
+                            <!-- Register New Plant -->
+                            <li>
+                                <a href="/register-plant.html" class="waves-effect">
+                                    <i class="mdi mdi-account-circle-outline" style="color: #A44910;"></i>
+                                    <span style="color: #0c2e8a;">Register New Plant</span>
+                                </a>
+                            </li>
+                    
+                            <!-- Billing Info -->
+                            <li>
+                                <a href="/billing-info.html" class="waves-effect">
+                                    <i class="mdi mdi-currency-usd" style="color: #A44910;"></i>
+                                    <span style="color: #0c2e8a;">Billing Info</span>
+                                </a>
+                            </li>
+                    
+                            <!-- Monthly Payment Receipt -->
+                            <li>
+                                <a href="/receipt.html" class="waves-effect">
+                                    <i class="mdi mdi-receipt" style="color: #A44910;"></i>
+                                    <span style="color: #0c2e8a;">Monthly Payment Receipt</span>
+                                </a>
                             </li>
                         </ul>
                     </div>
+                    
                     <!-- Sidebar -->
                 </div>
             </div>
             <!-- Left Sidebar End -->
+            <!-- End Super Admin Side Menu -->
 
             
 
@@ -176,120 +181,36 @@
             <div class="main-content">
                 <div class="container-fluid">
                     
-                     
-
-                <div class="page-content">
-                    <div class="container-fluid">
-
-                        <!-- start page title -->
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                    <h4 class="mb-sm-0">Dashboard</h4>
-
-                                    <div class="page-title-right">
-                                        <ol class="breadcrumb m-0">
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">e.ntelligence</a></li>
-                                            <li class="breadcrumb-item active">Dashboard</li>
-                                        </ol>
-                                    </div>
-
+                    <div class="page-content">
+                    <!-- start page title -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+                                <h4 class="mb-sm-0">Billing Information</h4>
+                                <div class="page-title-right">
+                                    <ol class="breadcrumb m-0">
+                                        <li class="breadcrumb-item"><a href="javascript: void(0);">e.ntelligence</a></li>
+                                        <li class="breadcrumb-item active">Billing Information</li>
+                                    </ol>
                                 </div>
                             </div>
                         </div>
-                        <div class="table-responsive">
-                        <table class="table">
-                            <thead>
-                              <tr>
-                                <th scope="col">Developer ID</th>
-                                <th scope="col">Developer Name</th>
-                                <th scope="col">Email</th>
-                                <th scope="col">Phone Number</th>
-                                <th scope="col">Location</th>
-                                <th scope="col">Actions</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <!-- Example row, repeat this for each developer -->
-                              <tr>
-                                <th scope="row">1</th>
-                                <td contenteditable="true">Nero Udezi</td>
-                                <td contenteditable="true">nero1234@gmail.com</td>
-                                <td contenteditable="true">(234) 9012-3456</td>
-                                <td contenteditable="true">New York</td>
-                                <td>
-                                  <button type="button" class="btn btn-noo-custom-primary  btn-sm edit-button">Edit</button>
-                                  <button type="button" class="btn btn-success btn-sm" onclick="saveChanges(this)">Save</button>
-                                </td>
-                              </tr>
-                              <tr>
-                                <th scope="row">2</th>
-                                <td contenteditable="true">Solomon grandy</td>
-                                <td contenteditable="true">bornonmonday@yahoomail.com</td>
-                                <td contenteditable="true">(555) 423-4567</td>
-                                <td contenteditable="true">Nairobi</td>
-                                <td>
-                                  <button type="button" class="btn btn-noo-custom-primary  btn-sm edit-button">Edit</button>
-                                  <button type="button" class="btn btn-success btn-sm" onclick="saveChanges(this)">Save</button>
-                                </td>
-                              </tr>
-                              <tr>
-                                <th scope="row">3</th>
-                                <td contenteditable="true">John Du</td>
-                                <td contenteditable="true">johndu@privatemail.com</td>
-                                <td contenteditable="true">(555) 123-4567</td>
-                                <td contenteditable="true">Birmingham</td>
-                                <td>
-                                  <button type="button" class="btn btn-noo-custom-primary  btn-sm edit-button">Edit</button>
-                                  <button type="button" class="btn btn-success btn-sm" onclick="saveChanges(this)">Save</button>
-                                </td>
-                              </tr>
-                              <!-- Repeat rows for other developers -->
-                            </tbody>
-                          </table>
+                    </div>
+        
+                    <!-- Billing Information Content Goes Here -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <!-- Your billing information content goes here -->
+                                    <p>Billing information content here.</p>
+                                </div>
+                            </div>
                         </div>
-
-                          
-
-                        <!-- Add this modal at the end of your HTML body -->
-<div class="modal fade" id="editDeveloperModal" tabindex="-1" aria-labelledby="editDeveloperModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="editDeveloperModalLabel">Edit Developer Information</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <!-- Add your form fields for editing developer information here -->
-        <form>
-          <div class="mb-3">
-            <label for="editDeveloperName" class="form-label">Developer Name</label>
-            <input type="text" class="form-control" id="editDeveloperName">
-          </div>
-          <div class="mb-3">
-            <label for="editDeveloperEmail" class="form-label">Email</label>
-            <input type="email" class="form-control" id="editDeveloperEmail">
-          </div>
-          <div class="mb-3">
-            <label for="editDeveloperPhone" class="form-label">Phone Number</label>
-            <input type="tel" class="form-control" id="editDeveloperPhone">
-          </div>
-          <div class="mb-3">
-            <label for="editDeveloperLocation" class="form-label">Location</label>
-            <input type="text" class="form-control" id="editDeveloperLocation">
-          </div>
-          <!-- Add more fields as needed -->
-          <button type="button" class="btn btn-custom-primary" id="saveEdit">Save Changes</button>
-        </form>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Modify the "Actions" column in your table to trigger the modal -->
-<td>
-  <button type="button" class="btn btn-custom-primary btn-sm" data-bs-toggle="modal" data-bs-target="#editDeveloperModal">Edit</button>
-</td>
+                    </div>
+        
+                    <!-- End Page-content -->
+        
 
                                               
                             <!-- end col -->

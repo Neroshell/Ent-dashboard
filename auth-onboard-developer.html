@@ -77,7 +77,9 @@
                             </div>
                         </div>
 
-                       
+                      
+                                        
+                        
 
                         <div class="dropdown d-none d-lg-inline-block ms-1">
                             <button type="button" class="btn header-item noti-icon waves-effect" data-toggle="fullscreen">
@@ -149,8 +151,8 @@
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
                                 <!-- Onboard and Edit Developers -->
-                                <li><a href="/auth-onboard-developer.html">Onboard Developers</a></li>
-                                <li><a href="/edit-developer.html">Edit Developers</a></li>
+                                <li><a href="/auth-onboard-developer.html">Onboard Developer</a></li>
+                                <li><a href="/edit-developer.html">Edit Developer</a></li>
                             </ul>
                         </li>
 
@@ -174,146 +176,85 @@
             <!-- Start right Content here -->
             <!-- ============================================================== -->
             <div class="main-content">
-                <div class="container-fluid">
-                    
+                
+                        <!-- Developer Dropdown -->
+                      
                      
 
-                <div class="page-content">
-                    <div class="container-fluid">
-
-                        <!-- start page title -->
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                    <h4 class="mb-sm-0">Dashboard</h4>
-
-                                    <div class="page-title-right">
-                                        <ol class="breadcrumb m-0">
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">e.ntelligence</a></li>
-                                            <li class="breadcrumb-item active">Dashboard</li>
-                                        </ol>
+              
+                        <div id="layout-wrapper" class="bg-pattern">
+                            <div class="bg-overlay"></div>
+                            <div class="account-pages my-5 pt-5">
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col-xl-5 col-lg-6 col-md-8">
+                                            <div class="card">
+                                                <div class="card-body p-4">
+                                                    <div class="text-center">
+                                                        <a href="index.html" class="">
+                                                            <img src="assets/images/entelligenc_icon.png" alt="" height="24" class="auth-logo logo-dark mx-auto">
+                                                            <img src="assets/images/entelligence_icon_ white.png" alt="" height="24" class="auth-logo logo-light mx-auto">
+                                                        </a>
+                                                    </div>
+                                                    
+                                                    <h4 class="font-size-18 text-muted text-center mt-2">Register</h4>
+                                                    <p class="text-muted text-center mb-4">Register a <span style="color: #A44910; font-weight: bold;">Developer</span> account now.</p>
+                                                    <form class="form-horizontal" action="/auth-register-developer.html" method="post">
+                    
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <div class="mb-4">
+                                                                    <label class="form-label" for="Name">Name</label>
+                                                                    <input type="text" class="form-control" id="name" placeholder="Enter name" name="name" required>
+                                                                </div>
+                                                                <div class="mb-4">
+                                                                    <label class="form-label" for="Phone_number">Email</label>
+                                                                    <input type="tel" class="form-control" id="Phone number" placeholder="Enter Phone number" name="phone_number" required>        
+                                                                </div>
+                                                                <div class="mb-4">
+                                                                    <label class="form-label" for="userpassword">Code</label>
+                                                                    <input type="text" class="form-control" id="user_id" placeholder="Enter ID" name="user_id" required>
+                                                                </div>
+                                                                <div class="mb-4">
+                                                                    <label class="form-label" for="userpassword">Phone number</label>
+                                                                    <input type="text" class="form-control" id="customer_code" placeholder="Enter code" name="customer_code" required>
+                                                                </div>
+                                                                <div class="mb-4">
+                                                                    <label class="form-label" for="userpassword">Bank Name</label>
+                                                                    <input type="text" class="form-control" id="customer_id" placeholder="Enter ID" name="user_id" required>
+                                                                </div>
+                                                                <div class="mb-4">
+                                                                    <label class="form-label" for="userpassword">Bank Account Number</label>
+                                                                    <input type="text" class="form-control" id="customer_id" placeholder="Enter ID" name="user_id">
+                                                                </div>
+                                                                <div class="mb-4">
+                                                                    <label class="form-label" for="userpassword">Bank Account Name</label>
+                                                                    <input type="text" class="form-control" id="customer_id" placeholder="Enter ID" name="user_id" required>
+                                                                </div>
+                                                                <div class="form-check">
+                                                                    <input type="checkbox" class="form-check-input" id="term-conditionCheck">
+                                                                    <label class="form-check-label fw-normal" for="term-conditionCheck">I accept <a href="#" class="text-primary">Terms and Conditions</a></label>
+                                                                </div>
+                                                                <div class="d-grid mt-4">
+                                                                    <button style="background-color: #A44910; border-color: #A44910;" class="btn btn-primary waves-effect waves-light" type="submit">Register</button>
+                                                                </div>
+                                                                
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            <div class="mt-5 text-center">
+                                                <p class="text-white-50">Already have an account ?<a href="auth-login.html" class="fw-medium" style="color: #A44910
+                                                ;"> Login </a> </p>
+                                                <p class="text-white-50">© <script>document.write(new Date().getFullYear())</script> Fuse. Crafted with <i class="mdi mdi-heart text-danger"></i> by BullTheme</p>
+                                            </div>
+                                        </div>
                                     </div>
-
+                                    <!-- end row -->
                                 </div>
                             </div>
-                        </div>
-                        <div class="table-responsive">
-                        <table class="table">
-                            <thead>
-                              <tr>
-                                <th scope="col">Developer ID</th>
-                                <th scope="col">Developer Name</th>
-                                <th scope="col">Email</th>
-                                <th scope="col">Phone Number</th>
-                                <th scope="col">Location</th>
-                                <th scope="col">Actions</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <!-- Example row, repeat this for each developer -->
-                              <tr>
-                                <th scope="row">1</th>
-                                <td contenteditable="true">Nero Udezi</td>
-                                <td contenteditable="true">nero1234@gmail.com</td>
-                                <td contenteditable="true">(234) 9012-3456</td>
-                                <td contenteditable="true">New York</td>
-                                <td>
-                                  <button type="button" class="btn btn-noo-custom-primary  btn-sm edit-button">Edit</button>
-                                  <button type="button" class="btn btn-success btn-sm" onclick="saveChanges(this)">Save</button>
-                                </td>
-                              </tr>
-                              <tr>
-                                <th scope="row">2</th>
-                                <td contenteditable="true">Solomon grandy</td>
-                                <td contenteditable="true">bornonmonday@yahoomail.com</td>
-                                <td contenteditable="true">(555) 423-4567</td>
-                                <td contenteditable="true">Nairobi</td>
-                                <td>
-                                  <button type="button" class="btn btn-noo-custom-primary  btn-sm edit-button">Edit</button>
-                                  <button type="button" class="btn btn-success btn-sm" onclick="saveChanges(this)">Save</button>
-                                </td>
-                              </tr>
-                              <tr>
-                                <th scope="row">3</th>
-                                <td contenteditable="true">John Du</td>
-                                <td contenteditable="true">johndu@privatemail.com</td>
-                                <td contenteditable="true">(555) 123-4567</td>
-                                <td contenteditable="true">Birmingham</td>
-                                <td>
-                                  <button type="button" class="btn btn-noo-custom-primary  btn-sm edit-button">Edit</button>
-                                  <button type="button" class="btn btn-success btn-sm" onclick="saveChanges(this)">Save</button>
-                                </td>
-                              </tr>
-                              <!-- Repeat rows for other developers -->
-                            </tbody>
-                          </table>
-                        </div>
-
-                          
-
-                        <!-- Add this modal at the end of your HTML body -->
-<div class="modal fade" id="editDeveloperModal" tabindex="-1" aria-labelledby="editDeveloperModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="editDeveloperModalLabel">Edit Developer Information</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <!-- Add your form fields for editing developer information here -->
-        <form>
-          <div class="mb-3">
-            <label for="editDeveloperName" class="form-label">Developer Name</label>
-            <input type="text" class="form-control" id="editDeveloperName">
-          </div>
-          <div class="mb-3">
-            <label for="editDeveloperEmail" class="form-label">Email</label>
-            <input type="email" class="form-control" id="editDeveloperEmail">
-          </div>
-          <div class="mb-3">
-            <label for="editDeveloperPhone" class="form-label">Phone Number</label>
-            <input type="tel" class="form-control" id="editDeveloperPhone">
-          </div>
-          <div class="mb-3">
-            <label for="editDeveloperLocation" class="form-label">Location</label>
-            <input type="text" class="form-control" id="editDeveloperLocation">
-          </div>
-          <!-- Add more fields as needed -->
-          <button type="button" class="btn btn-custom-primary" id="saveEdit">Save Changes</button>
-        </form>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Modify the "Actions" column in your table to trigger the modal -->
-<td>
-  <button type="button" class="btn btn-custom-primary btn-sm" data-bs-toggle="modal" data-bs-target="#editDeveloperModal">Edit</button>
-</td>
-
-                                              
-                            <!-- end col -->
-                        
-                <!-- End Page-content -->
-
-                <footer class="footer">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <script>document.write(new Date().getFullYear())</script> © <span style="color: #A44910; font-weight: bold;">entelligence.</span> 
-                            </div>
-                           
-                        </div>
-                    </div>
-                </footer>
-
-            </div>
-            <!-- end main content-->
-
-        </div>
-        <!-- END layout-wrapper -->
-
-    
+        <!-- /Right-bar -->
 
         <!-- Right bar overlay-->
         <div class="rightbar-overlay"></div>
